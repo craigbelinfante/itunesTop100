@@ -31,6 +31,10 @@ struct DetailView: View {
                         .font(.body)
                         .fontWeight(.regular)
                     
+                    Text(genreName)
+                        .font(.body)
+                        .fontWeight(.regular)
+                    
                     Text("No Copyright")
                         .font(.callout)
                         .foregroundColor(.secondary)
@@ -57,6 +61,15 @@ struct DetailView: View {
                 .frame(width: 200, height: 200)
                 .cornerRadius(10)
         }
+    }
+    
+    private var genreName: String {
+        var result = ""
+        guard let genres = album.genre else { return "" }
+        for item in genres {
+            result = item.name
+        }
+        return result
     }
 }
 

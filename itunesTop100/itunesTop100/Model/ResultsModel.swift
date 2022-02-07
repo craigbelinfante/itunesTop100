@@ -16,12 +16,17 @@ struct Feed: Codable {
     let feed: Results
 }
 
+struct Genre: Codable {
+    let name: String
+}
+
 struct AlbumResult: Identifiable, Codable {
     
     let id = UUID()
     let artist: String?
     let album: String?
     let artwork: String?
+    var genre: [Genre]?
     let releaseDate: String?
     let albumURL: String?
     
@@ -30,6 +35,7 @@ struct AlbumResult: Identifiable, Codable {
         case artist = "artistName"
         case album = "name"
         case artwork = "artworkUrl100"
+        case genre = "genres"
         case releaseDate = "releaseDate"
         case albumURL = "url"
     }
