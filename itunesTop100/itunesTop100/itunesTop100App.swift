@@ -11,7 +11,7 @@ import SwiftUI
 struct itunesTop100App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AlbumListView()
         }
     }
 }
