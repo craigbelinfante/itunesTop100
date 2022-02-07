@@ -18,6 +18,7 @@
 		44FD646F27B1063F0051BE8F /* AlbumListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD646E27B1063F0051BE8F /* AlbumListView.swift */; };
 		44FD647227B1077A0051BE8F /* ResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD647127B1077A0051BE8F /* ResultsController.swift */; };
 		44FD647627B108540051BE8F /* AlbumResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD647527B108540051BE8F /* AlbumResultsViewModel.swift */; };
+		44FD647827B10A0E0051BE8F /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD647727B10A0E0051BE8F /* TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		44FD646E27B1063F0051BE8F /* AlbumListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListView.swift; sourceTree = "<group>"; };
 		44FD647127B1077A0051BE8F /* ResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsController.swift; sourceTree = "<group>"; };
 		44FD647527B108540051BE8F /* AlbumResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumResultsViewModel.swift; sourceTree = "<group>"; };
+		44FD647727B10A0E0051BE8F /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				44FD646E27B1063F0051BE8F /* AlbumListView.swift */,
+				44FD647727B10A0E0051BE8F /* TableView.swift */,
 				44FD646627B08F870051BE8F /* DetailView.swift */,
 			);
 			path = Views;
@@ -296,6 +299,7 @@
 				44FD646527AE63700051BE8F /* ResultsModel.swift in Sources */,
 				44FD647227B1077A0051BE8F /* ResultsController.swift in Sources */,
 				44FD646727B08F870051BE8F /* DetailView.swift in Sources */,
+				44FD647827B10A0E0051BE8F /* TableView.swift in Sources */,
 				44FD647627B108540051BE8F /* AlbumResultsViewModel.swift in Sources */,
 				44FD643B27AE62490051BE8F /* itunesTop100App.swift in Sources */,
 				44FD646F27B1063F0051BE8F /* AlbumListView.swift in Sources */,
