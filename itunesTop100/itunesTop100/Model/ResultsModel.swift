@@ -9,6 +9,7 @@ import Foundation
 
 struct Results: Codable {
     let results: [AlbumResult]
+    let copyright: String?
 }
 
 struct Feed: Codable {
@@ -18,16 +19,14 @@ struct Feed: Codable {
 struct AlbumResult: Identifiable, Codable {
     
     let id = UUID()
-    let copyright: String?
     let artist: String?
     let album: String?
     let artwork: String?
     let releaseDate: String?
-    let albumURL: URL?
+    let albumURL: String?
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
-        case copyright = "copyright"
         case artist = "artistName"
         case album = "name"
         case artwork = "artworkUrl100"

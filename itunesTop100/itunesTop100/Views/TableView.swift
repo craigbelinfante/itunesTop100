@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct TableView: View {
-    @State var detailView = false
     @ObservedObject var albumResultsVM = AlbumResultsViewModel()
     let album: AlbumResult
     
@@ -22,7 +21,7 @@ struct TableView: View {
                     .bold()
                 
                 Text(album.artist ?? "No Artist")
-                    .font(.subheadline)
+                    .font(.system(size: 12))
                     .fontWeight(.semibold)
                     .foregroundColor(.red)
             }
@@ -32,18 +31,13 @@ struct TableView: View {
         .onAppear(perform: {
             albumResultsVM.getImage(with: album)
         })
-        .onTapGesture {
-            detailView.toggle()
-        }.sheet(isPresented: $detailView) {
-            DetailView(album: album)
-        }
     }
     
     private var imageView: some View {
         albumResultsVM.image
             .resizable()
             .frame(width: 70, height: 70)
-            .cornerRadius(15)
+            .cornerRadius(12)
             .shadow(color: .gray, radius: 5)
     }
 }

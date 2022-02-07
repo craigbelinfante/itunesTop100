@@ -13,7 +13,9 @@ struct AlbumListView: View {
         NavigationView {
             List {
                 ForEach(viewModel.albums) { album in
-                    TableView(album: album)
+                    NavigationLink(destination: DetailView(album: album)) {
+                        TableView(album: album)
+                    }
                 }
             }.navigationBarTitle("Top Albums")
         }.onAppear(perform: {
