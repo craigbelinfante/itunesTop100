@@ -16,6 +16,7 @@
 		44FD646527AE63700051BE8F /* ResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD646427AE63700051BE8F /* ResultsModel.swift */; };
 		44FD646727B08F870051BE8F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD646627B08F870051BE8F /* DetailView.swift */; };
 		44FD646F27B1063F0051BE8F /* AlbumListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD646E27B1063F0051BE8F /* AlbumListView.swift */; };
+		44FD647227B1077A0051BE8F /* ResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD647127B1077A0051BE8F /* ResultsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		44FD646427AE63700051BE8F /* ResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsModel.swift; sourceTree = "<group>"; };
 		44FD646627B08F870051BE8F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		44FD646E27B1063F0051BE8F /* AlbumListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListView.swift; sourceTree = "<group>"; };
+		44FD647127B1077A0051BE8F /* ResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				44FD643A27AE62490051BE8F /* itunesTop100App.swift */,
-				44FD646E27B1063F0051BE8F /* AlbumListView.swift */,
-				44FD646627B08F870051BE8F /* DetailView.swift */,
-				44FD646427AE63700051BE8F /* ResultsModel.swift */,
+				44FD647427B107920051BE8F /* Views */,
+				44FD647327B107820051BE8F /* Model */,
+				44FD647027B107690051BE8F /* Model Controller */,
 				44FD643E27AE624B0051BE8F /* Assets.xcassets */,
 				44FD644027AE624B0051BE8F /* Preview Content */,
 			);
@@ -131,6 +133,31 @@
 				44FD645727AE624C0051BE8F /* itunesTop100UITestsLaunchTests.swift */,
 			);
 			path = itunesTop100UITests;
+			sourceTree = "<group>";
+		};
+		44FD647027B107690051BE8F /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				44FD647127B1077A0051BE8F /* ResultsController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		44FD647327B107820051BE8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44FD646427AE63700051BE8F /* ResultsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44FD647427B107920051BE8F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				44FD646E27B1063F0051BE8F /* AlbumListView.swift */,
+				44FD646627B08F870051BE8F /* DetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44FD646527AE63700051BE8F /* ResultsModel.swift in Sources */,
+				44FD647227B1077A0051BE8F /* ResultsController.swift in Sources */,
 				44FD646727B08F870051BE8F /* DetailView.swift in Sources */,
 				44FD643B27AE62490051BE8F /* itunesTop100App.swift in Sources */,
 				44FD646F27B1063F0051BE8F /* AlbumListView.swift in Sources */,
