@@ -31,7 +31,7 @@ struct DetailView: View {
                         .font(.body)
                         .fontWeight(.regular)
                     
-                    Text(genreName)
+                    Text((album.genre?[0].name)!)
                         .font(.body)
                         .fontWeight(.regular)
                     
@@ -64,11 +64,8 @@ struct DetailView: View {
     }
     
     private var genreName: String {
-        var result = ""
-        guard let genres = album.genre else { return "" }
-        for item in genres {
-            result = item.name
-        }
+        guard let genres = album.genre else { return ""}
+        let result = genres[0].name
         return result
     }
     
