@@ -10,9 +10,6 @@
 		44FD643B27AE62490051BE8F /* itunesTop100App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD643A27AE62490051BE8F /* itunesTop100App.swift */; };
 		44FD643F27AE624B0051BE8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44FD643E27AE624B0051BE8F /* Assets.xcassets */; };
 		44FD644227AE624B0051BE8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44FD644127AE624B0051BE8F /* Preview Assets.xcassets */; };
-		44FD644C27AE624C0051BE8F /* itunesTop100Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD644B27AE624C0051BE8F /* itunesTop100Tests.swift */; };
-		44FD645627AE624C0051BE8F /* itunesTop100UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD645527AE624C0051BE8F /* itunesTop100UITests.swift */; };
-		44FD645827AE624C0051BE8F /* itunesTop100UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD645727AE624C0051BE8F /* itunesTop100UITestsLaunchTests.swift */; };
 		44FD646527AE63700051BE8F /* ResultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD646427AE63700051BE8F /* ResultsModel.swift */; };
 		44FD646727B08F870051BE8F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD646627B08F870051BE8F /* DetailView.swift */; };
 		44FD646F27B1063F0051BE8F /* AlbumListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD646E27B1063F0051BE8F /* AlbumListView.swift */; };
@@ -44,10 +41,7 @@
 		44FD643E27AE624B0051BE8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44FD644127AE624B0051BE8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44FD644727AE624C0051BE8F /* itunesTop100Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = itunesTop100Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		44FD644B27AE624C0051BE8F /* itunesTop100Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itunesTop100Tests.swift; sourceTree = "<group>"; };
 		44FD645127AE624C0051BE8F /* itunesTop100UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = itunesTop100UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		44FD645527AE624C0051BE8F /* itunesTop100UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itunesTop100UITests.swift; sourceTree = "<group>"; };
-		44FD645727AE624C0051BE8F /* itunesTop100UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itunesTop100UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		44FD646427AE63700051BE8F /* ResultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsModel.swift; sourceTree = "<group>"; };
 		44FD646627B08F870051BE8F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		44FD646E27B1063F0051BE8F /* AlbumListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListView.swift; sourceTree = "<group>"; };
@@ -85,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				44FD643927AE62490051BE8F /* itunesTop100 */,
-				44FD644A27AE624C0051BE8F /* itunesTop100Tests */,
-				44FD645427AE624C0051BE8F /* itunesTop100UITests */,
 				44FD643827AE62490051BE8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,23 +112,6 @@
 				44FD644127AE624B0051BE8F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		44FD644A27AE624C0051BE8F /* itunesTop100Tests */ = {
-			isa = PBXGroup;
-			children = (
-				44FD644B27AE624C0051BE8F /* itunesTop100Tests.swift */,
-			);
-			path = itunesTop100Tests;
-			sourceTree = "<group>";
-		};
-		44FD645427AE624C0051BE8F /* itunesTop100UITests */ = {
-			isa = PBXGroup;
-			children = (
-				44FD645527AE624C0051BE8F /* itunesTop100UITests.swift */,
-				44FD645727AE624C0051BE8F /* itunesTop100UITestsLaunchTests.swift */,
-			);
-			path = itunesTop100UITests;
 			sourceTree = "<group>";
 		};
 		44FD647027B107690051BE8F /* Model Controller */ = {
@@ -310,7 +285,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44FD644C27AE624C0051BE8F /* itunesTop100Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,8 +292,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44FD645827AE624C0051BE8F /* itunesTop100UITestsLaunchTests.swift in Sources */,
-				44FD645627AE624C0051BE8F /* itunesTop100UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
