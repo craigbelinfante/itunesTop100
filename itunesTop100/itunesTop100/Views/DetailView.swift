@@ -31,7 +31,7 @@ struct DetailView: View {
                         .font(.body)
                         .fontWeight(.regular)
                     
-                    Text((album.genre?[0].name)!)
+                    Text(genreName)
                         .font(.body)
                         .fontWeight(.regular)
                     
