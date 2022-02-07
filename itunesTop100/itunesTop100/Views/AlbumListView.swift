@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct AlbumListView: View {
+    @ObservedObject private var viewModel = AlbumResultsViewModel()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                ForEach(viewModel.albums) { album in
+                    TableView(album: album)
+                }
+            }.navigationBarTitle("Top Albums")
+        }.onAppear(perform: {
+            viewModel.getAlbums()
+        })
     }
 }
 
