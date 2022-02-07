@@ -35,7 +35,7 @@ struct DetailView: View {
                         .font(.body)
                         .fontWeight(.regular)
                     
-                    Text("No Copyright")
+                    Text(copyright)
                         .font(.callout)
                         .foregroundColor(.secondary)
                 }
@@ -71,11 +71,16 @@ struct DetailView: View {
         }
         return result
     }
+    
+    private var copyright: String {
+        let copyright = "Copyright © 2022 Apple Inc. All rights reserved."
+        return copyright
+    }
 }
 
 struct MusicStoreLinkButtonStyle: ButtonStyle {
     let color: Color
-
+    
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding(.vertical)
