@@ -25,7 +25,6 @@ final class ResultsController: NSObject {
                     let decoder = JSONDecoder()
                     let results = try decoder.decode(Feed.self, from: data)
                     completion(.success(results.feed.results))
-                    print(completion)
                 } catch {
                     completion(.failure(error))
                     print("Error fetching json results")
